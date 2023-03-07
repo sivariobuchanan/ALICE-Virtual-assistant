@@ -37,7 +37,6 @@ def speak(text):
 
 def handle_input(user_input, music_folder):
     commands = {
-        "should i smoke": lambda: speak("Lets smoke up hoe... i am not a little bitch i can handle all the smoke"),
         "who made you": lambda: speak("I was programmed by Sivario Buchanan."),
         "what is your name": lambda: speak("I am Alice V1.0.0."),
         "who do you love": lambda: speak(
@@ -112,7 +111,7 @@ def stop_music():
 
 
 def search_google(query):
-    speak("Okay sivario i will" + query)
+    speak("i will" + query)
     for result in search(query, num_results=5):
         webbrowser.open(result)
 
@@ -164,7 +163,7 @@ def main():
             user_input = input("")
             handle_input(user_input, music_folder)
         except KeyboardInterrupt:
-            speak("bye sivario")
+            speak("bye")
             exit()
 
 
