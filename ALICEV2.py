@@ -16,7 +16,7 @@ from googleapiclient.errors import HttpError
 player = None
 instance = None
 r = sr.Recognizer()
-youtube_api_key = "AIzaSyDelKySm0EhCTTdnynHvyjHzhWaY6FHHJM"  # Replace with your own API key
+youtube_api_key = "Api key"  # Replace with your own API key
 
 
 def get_time():
@@ -155,7 +155,7 @@ def main():
     instance = vlc.Instance("--no-xlib")
     player = instance.media_player_new()
 
-    music_folder = "/home/kalicodex86/Documents/music"
+    music_folder = "Music"
 
     greet()
 
